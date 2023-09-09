@@ -6,15 +6,15 @@ import (
 )
 
 type InferenceConfig struct {
-	Model             string  `json:"model"`
-	Prompt            string  `json:"prompt"`
-	MaxTokens         int32   `json:"max_tokens"`
-	Stop              *string `json:"stop"`
-	Temperature       float32 `json:"temperature"`
-	TopP              float32 `json:"top_p"`
-	TopK              int32   `json:"top_k"`
-	RepetitionPenalty float32 `json:"repetition_penalty"`
-	LogProbs          int32   `json:"logprobs"`
+	Model             string   `json:"model"`
+	Prompt            string   `json:"prompt"`
+	MaxTokens         int32    `json:"max_tokens"`
+	Stop              *string  `json:"stop"`
+	Temperature       *float32 `json:"temperature"`
+	TopP              *float32 `json:"top_p"`
+	TopK              *int32   `json:"top_k"`
+	RepetitionPenalty *float32 `json:"repetition_penalty"`
+	LogProbs          *int32   `json:"logprobs"`
 }
 
 type inferenceRequestBody struct {
