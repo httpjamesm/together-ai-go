@@ -17,7 +17,7 @@ resp, err := client.NewInference(InferenceConfig{
     Model:     "togethercomputer/RedPajama-INCITE-7B-Instruct",
     Prompt:    "The capital of France is",
     MaxTokens: 128,
-    Stop:      &stopString,
+    Stop:      &stopStrings,
 })
 if err != nil {
     panic(err)
